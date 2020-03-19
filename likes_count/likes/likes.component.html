@@ -1,0 +1,9 @@
+<h6>Tweets and Likes</h6>
+<span 
+  class="glyphicon"
+  [class.glyphicon-heart]="isLiked"
+  [class.glyphicon-heart-empty]="!isLiked"
+  [class.highlighted] = "isLiked"
+  (click)="onClick()"
+  ></span>
+  <span>{{ noOfLikes }}</span>
